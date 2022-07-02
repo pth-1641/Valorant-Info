@@ -25,10 +25,12 @@ export default {
     </div>
     <ul class="grid grid-cols-3 gap-5">
         <li v-for="agent in listAgents">
-            <img :src="agent.fullPortrait" alt="" />
-            <h3 class="py-3 bg-red-500 text-center font-semibold mt-3">
-                Agent {{ agent.displayName }}
-            </h3>
+            <router-link :to="`/agents/${agent.uuid}`">
+                <img :src="agent.fullPortrait" alt="" />
+                <h3 class="py-3 bg-red-500 text-center font-semibold mt-3">
+                    Agent {{ agent.displayName }}
+                </h3>
+            </router-link>
         </li>
     </ul>
 </template>

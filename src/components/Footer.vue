@@ -1,6 +1,4 @@
 <script>
-import { LFacebookCircle } from 'vue-icon-packs/bx';
-
 export default {};
 </script>
 <template>
@@ -19,10 +17,10 @@ export default {};
                     guides, and general information on popular topics from
                     Agents, Maps, Weapons, Skins, and more!
                 </p>
-                <em class="text-xs leading-3"
-                    >ValorantInfo.vercel.app was created under Riot Games'
-                    "Legal Jibber Jabber" policy using assets owned by Riot
-                    Games. Riot Games does not endorse or sponsor this project.
+                <em class="text-xs leading-3">
+                    This site was created under Riot Games' "Legal Jibber
+                    Jabber" policy using assets owned by Riot Games. Riot Games
+                    does not endorse or sponsor this project.
                 </em>
             </div>
             <ul class="grid grid-cols-3 h-max gap-x-3 gap-y-1">
@@ -41,9 +39,7 @@ export default {};
             </ul>
             <div>
                 <h3 class="font-semibold text-lg">CONNECT WITH US</h3>
-                <ul class="flex gap-2">
-                    <LFacebookCircle />
-                </ul>
+                <ul class="flex gap-2"></ul>
             </div>
         </div>
     </div>

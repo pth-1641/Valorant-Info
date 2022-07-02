@@ -2,8 +2,9 @@
 import Navbar from './components/Navbar.vue';
 import Events from './components/Events.vue';
 import Footer from './components/Footer.vue';
+import Loader from './components/Loader.vue';
 export default {
-    components: { Navbar, Events, Footer },
+    components: { Navbar, Events, Footer, Loader },
 };
 </script>
 

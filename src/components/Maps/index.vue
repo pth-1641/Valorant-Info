@@ -22,10 +22,12 @@ export default {
     </div>
     <ul class="grid grid-cols-3 gap-5">
         <li v-for="map in listMaps">
-            <img :src="map.splash" alt="" />
-            <h3 class="py-3 bg-red-500 text-center font-semibold">
-                {{ map.displayName }}
-            </h3>
+            <router-link :to="`/maps/${map.uuid}`">
+                <img :src="map.splash" alt="" />
+                <h3 class="py-3 bg-red-500 text-center font-semibold">
+                    {{ map.displayName }}
+                </h3>
+            </router-link>
         </li>
     </ul>
 </template>

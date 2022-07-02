@@ -12,4 +12,7 @@
     .info {
         @apply rounded-md p-8 bg-red-500;
     }
+    .back-button {
+        @apply py-1 px-2 text-sm rounded bg-red-500;
+    }
 }

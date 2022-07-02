@@ -21,15 +21,19 @@ export default {
         ranges and even the available skins for each weapon.
     </div>
     <ul class="grid grid-cols-3 gap-5">
-        <li v-for="weapon in listWeapons" class="flex flex-col">
-            <img
-                :src="weapon.displayIcon"
-                alt=""
-                class="flex-1 object-contain"
-            />
-            <h3 class="py-3 bg-red-500 text-center font-semibold mt-3">
-                {{ weapon.displayName }}
-            </h3>
+        <li v-for="weapon in listWeapons">
+            <router-link :to="`/weapons/${weapon.uuid}`">
+                <div class="flex flex-col h-full">
+                    <img
+                        :src="weapon.displayIcon"
+                        alt=""
+                        class="flex-1 object-contain"
+                    />
+                    <h3 class="py-3 bg-red-500 text-center font-semibold mt-3">
+                        {{ weapon.displayName }}
+                    </h3>
+                </div>
+            </router-link>
         </li>
     </ul>
 </template>
